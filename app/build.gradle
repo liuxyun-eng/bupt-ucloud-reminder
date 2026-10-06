@@ -1,0 +1,18 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'cn.edu.bupt.cloudpost'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'cn.edu.bupt.cloudpost'
+        minSdk 26
+        targetSdk 36
+        versionCode 5
+        versionName '0.1.4'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+}
