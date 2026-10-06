@@ -102,8 +102,10 @@
 用 Android Studio 打开本目录，安装 Android SDK Platform 36 与 Build Tools 35.0.0，使用 JDK 17 或 21。Gradle Wrapper 固定为 8.13，Android Gradle Plugin 为 8.13.0。
 
 ```sh
-./gradlew assembleDebug testDebugUnitTest lintDebug
+sh ./gradlew assembleDebug testDebugUnitTest lintDebug
 ```
+
+Windows 可使用 `gradlew.bat assembleDebug testDebugUnitTest lintDebug`。
 
 生成 APK：`app/build/outputs/apk/debug/app-debug.apk`。随附 APK 为调试签名测试包，不是应用商店发布包。正式分发时请使用你自己保管的发行签名密钥；更换签名后无法直接覆盖已有安装。
 
